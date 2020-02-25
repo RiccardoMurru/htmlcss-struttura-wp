@@ -6,7 +6,7 @@
 
 .page {
   width: 80%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 body {
@@ -31,7 +31,6 @@ body {
   background-position: center;
   background-size: cover;
   border: 15px solid #eee;
-  margin-top: 40px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -142,21 +141,31 @@ body {
 /* Non ha bisogno di stili dedicati */
 
 /* Footer */
+.footer {
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  color: #666;
+}
 .footer-text {
-  height: 100px;
-  background: purple;
+  line-height: 30px;
+  border-bottom: 1px solid #222;
 }
 
 .social {
   padding: 0;
-  text-align: center;
-  list-style: none
-
+  list-style: none;
+  line-height: 50px;
 }
 
 .social li {
   list-style: none;
   float: left;
   width: calc(100% / 3);
-  height: 50px;
+  font-size: 25px;
+}
+
+.social li a {
+  text-decoration: none;
+  color: #666;
 }
