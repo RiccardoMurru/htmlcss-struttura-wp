@@ -1,3 +1,4 @@
+/* Generali */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,19 +9,69 @@
   margin: 0 auto;
 }
 
-/* header */
-.header {
-  background: red;
-  height: 150px;
+body {
+  background-image: url('../img/background-pagina.png');
 }
 
-.navbar {
-  background: pink;
-  height: 80px;
+/* header */
+.header {
   margin-bottom: 10px;
 }
 
+.hero {
+  position: relative;
+  background-image: url('../img/background-banner.jpeg');
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  border: 15px solid #eee;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+}
+
+#caption {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar {
+  background: #666;
+  text-align: center;
+  line-height: 50px;
+  padding: 0;
+}
+
+.navbar li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+
+}
+
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 /* Sezione principale */
+.col {
+  float: left;
+  width: calc(100% / 3);
+  padding: 10px;
+}
+
 .clearfix::after {
   content: '';
   display: table;
@@ -43,14 +94,20 @@
   margin-bottom: 10px;
 }
 
-.col {
-  float: left;
-  width: calc(100% / 3);
-  padding: 10px;
-}
-
 /* Footer */
-.footer {
+.footer-text {
   height: 100px;
   background: purple;
+}
+
+.social {
+  padding: 0;
+  text-align: center;
+}
+
+.social li {
+  list-style: none;
+  float: left;
+  width: calc(100% / 3);
+  height: 50px;
 }
