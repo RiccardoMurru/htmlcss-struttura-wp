@@ -13,9 +13,15 @@ body {
   background-image: url('../img/background-pagina.png');
 }
 
+.main,
+.footer {
+  font-family: 'Roboto';
+}
+
 /* header */
 .header {
   margin-bottom: 10px;
+  font-family: 'Montserrat';
 }
 
 .hero {
@@ -25,6 +31,8 @@ body {
   background-position: center;
   background-size: cover;
   border: 15px solid #eee;
+  margin-top: 40px;
+  border-radius: 5px 5px 0 0;
 }
 
 #logo {
@@ -50,6 +58,7 @@ body {
   text-align: center;
   line-height: 50px;
   padding: 0;
+  border-radius: 0 0 5px 5px;
 }
 
 .navbar li{
@@ -65,34 +74,72 @@ body {
   color: #fff;
 }
 
-/* Sezione principale */
-.col {
-  float: left;
-  width: calc(100% / 3);
-  padding: 10px;
-}
 
+/* Utilities */
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 
+/* Sezione principale */
+
+.col{
+  float: left;
+}
+
 .left {
-  height: 200px;
-  background: green;
+  width: 25%;
+  padding-right: 20px;
 }
 
 .center {
-  height: 400px;
-  background: blue;
+  width: 50%;
 }
 
 .right {
-  background: yellow;
-  height: calc(800px / 3);
-  margin-bottom: 10px;
+  width: 25%;
+  padding-left: 20px;
 }
+
+.box {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  opacity: .8;
+  border-radius: 10px;
+}
+
+.title {
+  line-height: 20px;
+  margin: 20px 0 50px;
+  color: #222;
+  opacity: .9;
+}
+
+/* Colonna sinistra */
+
+.news {
+  display: block;
+  padding: 0 0 10px;
+  text-transform: capitalize;
+}
+
+.fa-rss-square {
+  float: left;
+  color: #fcba03;
+  font-size: 20px;
+  margin: 20px 4px 50px;
+}
+
+/* Colonna centrale */
+.paragraph {
+  text-align: justify;
+  line-height: 25px;
+}
+
+/* Colonna destra */
+/* Non ha bisogno di stili dedicati */
 
 /* Footer */
 .footer-text {
@@ -103,6 +150,8 @@ body {
 .social {
   padding: 0;
   text-align: center;
+  list-style: none
+
 }
 
 .social li {
